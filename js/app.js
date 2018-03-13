@@ -1,6 +1,21 @@
-console.log('Loaded');
+console.log('loaded');
 $(document).ready(function() {
-  $('#fullpage').fullpage({
-    anchors: ['firstPage', 'secondPage', 'thirdPage']
-  });
+  $('#fullpage').fullpage();
 });
+
+function init() {
+
+  $(document).ready(function(){
+
+
+    $('#fullpage').fullpage({
+      anchors: ['about', 'projects', 'skills', 'contact']
+    });
+
+
+  });
+
+}
+
+
+init();
