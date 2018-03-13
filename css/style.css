@@ -7,3 +7,28 @@
   border-color: transparent #222 transparent transparent
 
 }
+
+.page1 {
+  background-color: white;
+}
+.page2 {
+  background-color: grey;
+}
+.page3 {
+  background-color: white;
+}
+.page4 {
+  background-color: grey;
+}
+.page5 {
+  background-color: white;
+}
+
+.project-images {
+  max-width: 40%;
+}
+
+.container {
+  margin: 0 auto;
+  text-align: center;
+}
