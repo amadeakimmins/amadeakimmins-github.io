@@ -1,6 +1,9 @@
-/* body {
-  background-color: blue;
-} */
-body {
-    overflow-y: scroll;
+
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #222;
+}
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #222 transparent transparent
+
 }
