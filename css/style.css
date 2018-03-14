@@ -1,11 +1,10 @@
-
-.fp-controlArrow.fp-next {
-  border-color: transparent transparent transparent #222;
+body {
+  font-family: 'Gilroy', sans-serif;
 }
 
-.fp-controlArrow.fp-prev {
-  border-color: transparent #222 transparent transparent
-
+.container {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page1 {
@@ -24,14 +23,36 @@
   background-color: white;
 }
 
+/* HOME */
+
+.hidden {
+  visibility: hidden;
+  position: absolute;
+  display: none;
+}
+
+/* PROJECTS */
+
 .project-images {
   max-width: 50%;
 }
 
-.container {
-  margin: 0 auto;
-  text-align: center;
+.fp-controlArrow.fp-next {
+  border-color: transparent transparent transparent #222;
 }
+
+.fp-controlArrow.fp-prev {
+  border-color: transparent #222 transparent transparent
+}
+
+/* SKILLS */
+
+.devicon {
+  font-size: 60px;
+  margin: 4%;
+}
+
+/* CONTACT */
 
 .icon {
   font-size: 30px;
