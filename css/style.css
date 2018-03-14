@@ -25,10 +25,16 @@
 }
 
 .project-images {
-  max-width: 40%;
+  max-width: 50%;
 }
 
 .container {
   margin: 0 auto;
   text-align: center;
+}
+
+.icon {
+  font-size: 30px;
+  color: purple;
+  margin: 3%;
 }
