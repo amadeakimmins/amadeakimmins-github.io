@@ -1,5 +1,7 @@
 body {
   font-family: 'Gilroy', sans-serif;
+  color: #0b132b;
+  /* color: #0d1f2d; */
 }
 
 .container {
@@ -11,17 +13,35 @@ body {
   background-color: white;
 }
 .page2 {
-  background-color: grey;
+  background-color: #c5c5c5;
 }
 .page3 {
   background-color: white;
 }
 .page4 {
-  background-color: grey;
+  background-color: #c5c5c5;
 }
 .page5 {
   background-color: white;
 }
+
+.button-style {
+  color: #f9f9f9;
+  background-color: #f3d8c7;
+  border: 1px solid #f3d8c7;
+  border-radius: 5%;
+  padding: 8px 15px;
+  margin: 2%;
+  width: 15%;
+  text-decoration: none;
+}
+
+.button-style:hover {
+  background-color: #c5c5c5;
+  border: 1px solid #c5c5c5;
+  color: #f3d8c7;
+}
+
 
 /* HOME */
 
@@ -32,6 +52,10 @@ body {
 }
 
 /* PROJECTS */
+
+.fp-tableCell {
+  text-align: center;
+}
 
 .project-images {
   max-width: 50%;
@@ -50,12 +74,14 @@ body {
 .devicon {
   font-size: 60px;
   margin: 4%;
+  color: #f3d8c7;
+
 }
 
 /* CONTACT */
 
 .icon {
   font-size: 30px;
-  color: purple;
+  color: #f3d8c7;
   margin: 3%;
 }

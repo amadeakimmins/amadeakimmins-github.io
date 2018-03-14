@@ -1,9 +1,13 @@
-console.log('loaded');
+
+
+
 $(document).ready(function() {
+
   $('#fullpage').fullpage({
     scrollingSpeed: 600
-  }
-  );
+  });
+  
+  $('.modal').modal();
 
   // HIDING DIVS DEPENDING ON TIME CHOSEN
   const $30SecsButton = $('.30SecsButton');
