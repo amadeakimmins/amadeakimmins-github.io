@@ -6,8 +6,15 @@ $(document).ready(function() {
   $('#fullpage').fullpage({
     scrollingSpeed: 600
   });
-  
-  $('.modal').modal();
+
+  $('.modal').modal({
+    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+     opacity: 0.3, // Opacity of modal background
+     inDuration: 300, // Transition in duration
+     outDuration: 200, // Transition out duration
+     startingTop: '50%', // Starting top style attribute
+     endingTop: '50%', // Ending top style attribute
+  });
 
   // HIDING DIVS DEPENDING ON TIME CHOSEN
   const $30SecsButton = $('.30SecsButton');

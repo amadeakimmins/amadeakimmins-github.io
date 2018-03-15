@@ -4,6 +4,10 @@ body {
   /* color: #0d1f2d; */
 }
 
+.title{
+  text-align: center;
+}
+
 .container {
   margin: 0 auto;
   text-align: center;
@@ -32,8 +36,6 @@ body {
   border-radius: 5%;
   padding: 8px 15px;
   margin: 2%;
-  width: 15%;
-  text-decoration: none;
 }
 
 .button-style:hover {
