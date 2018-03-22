@@ -9,10 +9,10 @@ $(document).ready(function() {
 
   $('.modal').modal({
     dismissible: true, // Modal can be dismissed by clicking outside of the modal
-     opacity: 0.3, // Opacity of modal background
+     opacity: 0.7, // Opacity of modal background
      inDuration: 300, // Transition in duration
      outDuration: 200, // Transition out duration
-     startingTop: '50%', // Starting top style attribute
+     startingTop: '5%', // Starting top style attribute
      endingTop: '50%', // Ending top style attribute
   });
 
