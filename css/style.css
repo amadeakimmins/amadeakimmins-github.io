@@ -65,11 +65,16 @@ body {
 
 .fp-controlArrow.fp-next {
   border-color: transparent transparent transparent #222;
+  right: 15%;
+  border-width: 28.5px 0 28.5px 25px;
 }
 
 .fp-controlArrow.fp-prev {
-  border-color: transparent #222 transparent transparent
+  border-color: transparent #222 transparent transparent;
+  left: 15%;
+  border-width: 28.5px 25px 28.5px 0;
 }
+
 
 /* SKILLS */
 
@@ -89,35 +94,46 @@ body {
 }
 
 .image {
-  width: 50%;
-}
-
-.overlay-text {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* top: 20%; */
-  /* bottom: 20%; */
-  height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #f3d8c7;
+  margin-bottom: 2%;
 }
 
-.image-container:hover .overlay-text {
-  opacity: 0.6;
+
+body {
+  background: #333;
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
 }
 
-div.text {
+.typewriter {
   color: #222;
-  text-align: center;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  font-size: 30px;
+  font-family: 'Gilroy', sans-serif;
+  padding-bottom: 3%;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .1em solid #f3d8c7; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  30% { border-color: #f3d8c7 }
+}
+
+.text-container {
+  margin-left: 20%;
+  margin-right: 20%;
 }

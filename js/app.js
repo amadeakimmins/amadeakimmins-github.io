@@ -1,27 +1,40 @@
+const $isAnimatedSecond = $('.page2 .is-animated');
+const $isAnimatedThird = $('.page3 .is-animated');
+const $isAnimatedFourth = $('.page4 .is-animated');
+const $isAnimatedFifth = $('.page5 .is-animated');
 
-
+const $30SecsButton = $('.30SecsButton');
+const $5MinsButton = $('.5MinsButton');
+const $page2 = $('.page2');
+const $page4 = $('.page4');
 
 $(document).ready(function() {
 
   $('#fullpage').fullpage({
-    scrollingSpeed: 600
+    anchors:['page1', 'page2', 'page3', 'page4', 'page5']
   });
 
-  $('.modal').modal({
-    dismissible: true, // Modal can be dismissed by clicking outside of the modal
-     opacity: 0.7, // Opacity of modal background
-     inDuration: 300, // Transition in duration
-     outDuration: 200, // Transition out duration
-     startingTop: '5%', // Starting top style attribute
-     endingTop: '50%', // Ending top style attribute
-  });
+  // function animateTitle() {
+  //   if( index == 1 && nextIndex == 2 ) {
+  //       $isAnimatedSecond.animateCss('fadeInLeft');
+  //   }
+  // }
 
-  // HIDING DIVS DEPENDING ON TIME CHOSEN
-  const $30SecsButton = $('.30SecsButton');
-  const $5MinsButton = $('.5MinsButton');
-  const $page2 = $('.page2');
-  const $page4 = $('.page4');
+  // onLeave: function(index, nextIndex, direction){
+	// 	var $isAnimatedSecond = $('.page2 .is-animated');
+  //
+	// 	//after leaving section 2
+	// 	if(index == 1 && nextIndex == 2){
+  //
+	// 	}
+  //
+	// 	else if(index == 2 && direction == 'down'){
+	// 		alert("Going to section 1!");
+	// 	}
+	// }
 
+
+  // HIDING PAGES DEPENDING ON BUTTON CHOSEN
   function smallPortfolio() {
 
     $page2.addClass('hidden');

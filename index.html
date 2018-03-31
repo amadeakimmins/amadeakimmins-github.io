@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.6/jquery.fullpage.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 </head>
@@ -20,18 +21,19 @@
       <div id="home" class="section page1">
         <div class="container">
           <h1>Amadea Kimmins</h1>
-          <h2>Web Developer</h2>
-          <!-- CHANGE THIS SO THAT THE PAGE SCROLLS AUTOMATICALLY ON CLICK OR DISPLAYS AN ARROW -->
-          <p>How much time do you have?</p>
-          <a type="button" name="button" class="30SecsButton button-style">30 seconds</a>
-          <a type="button" name="button" class="5MinsButton button-style">5 minutes</a>
+          <h3>Web Developer</h3>
+          <div>
+            <h1 class="typewriter">How much time do you have?</h1>
+          </div>
+          <a href="#page3" type="button" name="button" class="30SecsButton button-style">30 seconds</a>
+          <a href="#page2" type="button" name="button" class="5MinsButton button-style">5 minutes</a>
         </div>
       </div>
 
-<!-- ADD PICTURE? -->
+<!-- ADD INTERESTS -->
       <div id="about" class="section page2">
         <div class="container">
-          <h3>About Me</h3>
+          <h1 class="is-animated">About Me</h1>
           <p>I’ve always aspired to a job where I can combine my creativity whilst
             utilising the skills in problem solving and logical thinking that I
             have gained from my degree in Economics and Philosophy. This drove
@@ -56,17 +58,30 @@
       <div class="section page3">
         <div class="slide">
           <h3 class="title">sustain.</h3>
-          <div class="image-container">
-            <img class="responsive-img image" src="./assets/images/sustain.png">
-            <div class="overlay-text">
-              <div class="text">info text</div>
+          <div class="text-container">
+            <div class="row">
+              <div class="col s6">
+                <img class="responsive-img image" src="./assets/images/sustain.png">
+              </div>
+              <div class="col s6">
+                <div class="row">
+                  <div>
+                    <p>A RESTful, Full-Stack MERN Application.</p>
+                  </div>
+                  <div>
+                    <p>Tech - HTML, CSS, SCSS, JavaScript (ECMA6), Gulp, Node.js, Express.js, React, Mongo, Git, Github, Heroku </p>
+                    <p>Dependencies - Axios, Bcrypt, Body-parser, Express, Filestack-react, Font-awesome, Lodash, Mongoose, Mongoose-unique-validator, Morgan, React, React-burger-menu, React-dom, React-router-dom</p>
+                  </div>
+                  <div>
+                    <a class="button-style links" href="https://sustain-app.herokuapp.com/" target="_blank">View on Heroku</a>
+                    <a class="button-style links" href="https://github.com/amadeakimmins/wdi-final-project" target="_blank">View on GitHub</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div>
-            <a href="https://sustain-app.herokuapp.com/" target="_blank">View on Heroku</a>
-            <a href="#" target="_blank">View on GitHub</a>
-          </div>
+
         </div>
 
         <div class="slide">
@@ -74,14 +89,11 @@
 
           <div class="image-container">
             <img class="responsive-img image" src="./assets/images/social-city.png">
-            <div class="overlay-text">
-              <div class="text">info text</div>
-            </div>
           </div>
 
           <div>
-            <a href="https://social-city-app.herokuapp.com/" target="_blank">View on Heroku</a>
-            <a href="#" target="_blank">View on GitHub</a>
+            <a class="button-style links" href="https://social-city-app.herokuapp.com/" target="_blank">View on Heroku</a>
+            <a class="button-style links" href="#" target="_blank">View on GitHub</a>
           </div>
         </div>
 
@@ -90,14 +102,11 @@
 
           <div class="image-container">
             <img class="responsive-img image" src="./assets/images/deseo.png">
-            <div class="overlay-text">
-              <div class="text">info text</div>
-            </div>
           </div>
 
           <div>
-            <a href="https://deseo-app.herokuapp.com/" target="_blank">View on Heroku</a>
-            <a href="#" target="_blank">View on GitHub</a>
+            <a class="button-style links" href="https://deseo-app.herokuapp.com/" target="_blank">View on Heroku</a>
+            <a class="button-style links" href="#" target="_blank">View on GitHub</a>
           </div>
         </div>
 
@@ -106,14 +115,11 @@
 
           <div class="image-container">
             <img class="responsive-img image" src="./assets/images/colour-match.png">
-            <div class="overlay-text">
-              <div class="text">info text</div>
-            </div>
           </div>
 
           <div>
-            <a href="https://colour-match-game.herokuapp.com/" target="_blank">View on Heroku</a>
-            <a href="#" target="_blank">View on GitHub</a>
+            <a class="button-style links" href="https://colour-match-game.herokuapp.com/" target="_blank">View on Heroku</a>
+            <a class="button-style links" href="#" target="_blank">View on GitHub</a>
           </div>
         </div>
 
@@ -147,7 +153,7 @@
       <!-- ADJUST THE MARGINS -->
       <div id="skills" class="section page4">
         <div class="container">
-          <h3>Skills</h3>
+          <h1 class="is-animated">Skills</h1>
           <div class="row">
             <i class="devicon devicon-html5-plain-wordmark"></i>
             <i class="devicon devicon-css3-plain-wordmark"></i>
@@ -175,7 +181,7 @@
 
       <div id="contact" class="section page5">
         <div class="container">
-          <h3>Contact Me:</h3>
+          <h1 class="is-animated">Contact Me:</h1>
           <br>
           <a href="mailto:amadeavekimmins@gmail.com" target="_blank">
               <i class="icon fas fa-envelope fa-2x"></i></a>
