@@ -146,10 +146,21 @@ body {
   color: #f3d8c7;
 }
 
+.about-me-text {
+  font-size: 13px;
+}
 
 .about-me-container {
   width: 50%;
   margin: 0 auto;
+}
+
+.tabs .tab a {
+  color: #f3d8c7;
+}
+
+.tabs .tab a:hover {
+  color: #f3d8c7;
 }
 
 @media only screen and (max-width: 800px) {
@@ -166,7 +177,7 @@ body {
    display:none;
  }
  .about-me-text {
-   font-size: 15px;
+   font-size: 12px;
  }
  .about-me-container {
    width: 90%;
