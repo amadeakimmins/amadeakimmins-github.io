@@ -146,6 +146,12 @@ body {
   color: #f3d8c7;
 }
 
+
+.about-me-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
 @media only screen and (max-width: 800px) {
   .name-responsive {
     font-size: 30px;
@@ -155,5 +161,14 @@ body {
   }
  .typewriter-responsive {
    font-size:18px;
+ }
+ .project-info {
+   display:none;
+ }
+ .about-me-text {
+   font-size: 15px;
+ }
+ .about-me-container {
+   width: 90%;
  }
 }
